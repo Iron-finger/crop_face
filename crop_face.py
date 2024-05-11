@@ -12,9 +12,6 @@ import os
 # Dlib 正向人脸检测器
 detector = dlib.get_frontal_face_detector()
 
-# Dlib 人脸 landmark 特征点检测器
-predictor = dlib.shape_predictor('dlib-19.24/shape_predictor_68_face_landmarks.dat')
-
 
 def crop_face(input_folder_path, output_folder_path):
     images = os.listdir(input_folder_path)
